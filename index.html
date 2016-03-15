@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>水平垂直居中</title>
+	<style type="text/css">
+		body
+		{
+			font-family:  "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+		}
+	    .wrap
+	    {
+	    	background-color: #eee;
+	    	padding:20px;
+	    	margin: 20px;
+	    	border: solid 1px #999;
+	    }
+	    .wrap:after
+	    {
+			display: block;
+			content: "";
+			clear: both;
+	    }
+		.left
+		{
+			padding: 20px;
+			border: solid 1px #999;
+			background-color: #fff;
+			height: 120px;
+			width: 200px;
+			box-sizing: border-box;
+			float: left;
+		}
+		.right
+		{
+			padding: 20px;
+			border: solid 1px #999;
+			background-color: #fff;
+			box-sizing: border-box;
+			width: 120px;
+			float: right;
+		}
+		.mid
+		{
+			padding: 20px;
+			background-color: #fff;
+			margin-left: 240px;
+			margin-right: 160px;
+			border: solid 1px #999;
+			box-sizing: border-box;
+		}
+		span.logo
+		{
+			display: block;
+			height: 80px;
+			width: 80px;
+			overflow: hidden;
+			border: solid 1px #999;
+			box-sizing: border-box;
+			float: left;
+		}
+		span.logo-mem
+		{
+			margin: 10px 0;
+		}
+	</style>
+</head>
+<body>
+<div class="wrap">
+
+	<div class="left">
+		<span class="logo">
+			<img src="./img/team.jpg">
+		</span>
+		<span class="team-name">&nbsp&nbsp无用改革</span>
+	</div>
+
+	<div class="right">
+		<span class="logo logo-mem">
+			<img src="./img/mem1.jpg">
+		</span>
+		<span class="logo logo-mem">
+			<img src="./img/mem2.jpg">
+		</span>
+		<span class="logo logo-mem">
+			<img src="./img/mem3.jpg">
+		</span>
+		<span class="logo logo-mem">
+			<img src="./img/mem4.jpg">
+		</span>
+		<span class="logo logo-mem">
+			<img src="./img/mem5.jpg">
+		</span>
+	</div>
+
+	<div class="mid">
+		<h2>无用改革</h2>
+		<p>无用改革团队是一个充满活力的团队，成员的基础和背景各不相同，现在我们能够聚集在一起学习前端技术，共同进步实现目标，真是棒棒的。</p>
+		<p>组长“东东”：即将毕业，实习一年以上，主攻前端次后端。</p>
+		<p>组员“涛涛”：有半年html，css，javascript，jquery经验，目前在职成创融辉，熟悉一些node.js和还有移动端。</p>
+		<p>组员“晓晓”：原来做国际物流，但对前端感兴趣，想转行，目前在自学html,css和js。</p>
+		<p>组员“桐桐”：即将毕业，没有公司项目实战经验，ps以及基础的页面问题不大，用原生js做过canvas小游戏，正在学习jquery。</p>
+		<p>组员“夏夏”：百度交互设计师，熟悉html，css，目前在苦读js红宝书，对jquery框架等有一定了解。</p>
+	</div>
+
+</div>
+</body>
+</html>
